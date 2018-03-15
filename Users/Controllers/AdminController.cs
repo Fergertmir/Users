@@ -29,7 +29,7 @@ namespace Users.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(CreateModel model)
+        public async Task<ActionResult> Create(CreateUserModel model)
         {
             if (ModelState.IsValid)
             {

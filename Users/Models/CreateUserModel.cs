@@ -2,7 +2,7 @@
 
 namespace Users.Models
 {
-    public class CreateModel
+    public class CreateUserModel
     {
         [Required]
         public string Name { get; set; }

@@ -18,6 +18,8 @@ namespace Users
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
             });
+
+            app.CreatePerOwinContext<AppRoleManager>(AppRoleManager.Create);
         }
     }
 }

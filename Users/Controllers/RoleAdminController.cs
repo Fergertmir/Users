@@ -11,6 +11,7 @@ using System.Collections.Generic;
 
 namespace Users.Controllers
 {
+    [Authorize(Roles = "Administrators")]
     public class RoleAdminController : Controller
     {
         private AppUserManager UserManager
